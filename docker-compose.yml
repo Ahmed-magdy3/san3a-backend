@@ -1,0 +1,16 @@
+version: "3.9"
+services:
+  postgres:
+    image: postgres:16
+    container_name: san3a-postgres
+    environment:
+      POSTGRES_DB: san3a_db
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - san3a_pg_data:/var/lib/postgresql/data
+
+volumes:
+  san3a_pg_data:
