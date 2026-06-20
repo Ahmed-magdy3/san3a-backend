@@ -1,8 +1,8 @@
 spring:
   datasource:
-    url: ${DB_URL:jdbc:postgresql://localhost:5432/San3a}
+    url: ${DB_URL:jdbc:postgresql://postgres.railway.internal:5432/railway}
     username: ${DB_USERNAME:postgres}
-    password: ${DB_PASSWORD:12345}
+    password: ${DB_PASSWORD:lfVbdEARTZVIxOKhxqjMFOthbLymEDBP}
   jpa:
     hibernate:
       ddl-auto: validate
